@@ -1,0 +1,108 @@
+@import "cssstartupdefaults";
+body {
+	background-color: hsl(217, 54%, 11%);
+	font-family: "Outfit", sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.card {
+		background-color: hsl(216, 50%, 16%);
+		height: 70vh;
+		width: 300px;
+		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+		border-radius: 10px;
+		padding: 20px;
+		position: relative;
+		.image {
+			height: 50%;
+			width: 100%;
+			border-radius: 5px;
+			position: relative;
+			background: {
+				image: url(../images/image-equilibrium.jpg);
+				size: cover;
+				repeat: no-repeat;
+			}
+			.eye {
+				height: 100%;
+				width: inherit;
+				display: flex;
+				border-radius: inherit;
+				background-color: hsla(178, 100%, 50%, 0.562);
+				opacity: 0;
+				transition: 0.5s ease-in-out;
+				&:hover {
+					opacity: 1;
+					cursor: pointer;
+				}
+				svg {
+					margin: auto;
+				}
+			}
+		}
+		h3 {
+			color: hsl(0, 0%, 100%);
+			margin: {
+				top: 20px;
+				bottom: 20px;
+			}
+			&:hover {
+				color: hsl(178, 100%, 50%);
+				cursor: pointer;
+			}
+		}
+		p {
+			color: hsl(215, 51%, 70%);
+			font-size: 14px;
+		}
+		.downsection {
+			display: flex;
+			justify-content: space-between;
+			margin: {
+				top: 30px;
+				bottom: 20px;
+			}
+			svg {
+				margin-right: 5px;
+			}
+			div {
+				display: flex;
+				font-size: 14px;
+			}
+			.eth {
+				color: hsl(178, 100%, 50%);
+				font-weight: 500;
+			}
+			.time {
+				color: hsl(215, 51%, 70%);
+			}
+		}
+		.cardfoot {
+			display: flex;
+			align-items: center;
+			font-size: 14px;
+			color: hsl(215, 51%, 70%);
+			position: absolute;
+			bottom: 20px;
+			img {
+				height: 30px;
+				border-radius: 50%;
+				border: 1px solid white;
+				aspect-ratio: 1/1;
+				margin-right: 5px;
+			}
+			span {
+				color: hsl(0, 0%, 100%);
+				margin-left: 5px;
+				&:hover {
+					color: hsl(178, 100%, 50%);
+					cursor: pointer;
+				}
+			}
+		}
+		.line {
+			width: 100%;
+			border-bottom: 1px solid hsl(215, 32%, 27%);
+		}
+	}
+}

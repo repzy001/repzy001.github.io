@@ -1,0 +1,120 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  font-family: serif;
+  color: #000;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  background-color: hsl(217deg, 54%, 11%);
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .card {
+  background-color: hsl(216deg, 50%, 16%);
+  height: 70vh;
+  width: 300px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+}
+body .card .image {
+  height: 50%;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  background-image: url(../images/image-equilibrium.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body .card .image .eye {
+  height: 100%;
+  width: inherit;
+  display: flex;
+  border-radius: inherit;
+  background-color: hsla(178deg, 100%, 50%, 0.562);
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+body .card .image .eye:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+body .card .image .eye svg {
+  margin: auto;
+}
+body .card h3 {
+  color: hsl(0deg, 0%, 100%);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body .card h3:hover {
+  color: hsl(178deg, 100%, 50%);
+  cursor: pointer;
+}
+body .card p {
+  color: hsl(215deg, 51%, 70%);
+  font-size: 14px;
+}
+body .card .downsection {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+body .card .downsection svg {
+  margin-right: 5px;
+}
+body .card .downsection div {
+  display: flex;
+  font-size: 14px;
+}
+body .card .downsection .eth {
+  color: hsl(178deg, 100%, 50%);
+  font-weight: 500;
+}
+body .card .downsection .time {
+  color: hsl(215deg, 51%, 70%);
+}
+body .card .cardfoot {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: hsl(215deg, 51%, 70%);
+  position: absolute;
+  bottom: 20px;
+}
+body .card .cardfoot img {
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid white;
+  aspect-ratio: 1/1;
+  margin-right: 5px;
+}
+body .card .cardfoot span {
+  color: hsl(0deg, 0%, 100%);
+  margin-left: 5px;
+}
+body .card .cardfoot span:hover {
+  color: hsl(178deg, 100%, 50%);
+  cursor: pointer;
+}
+body .card .line {
+  width: 100%;
+  border-bottom: 1px solid hsl(215deg, 32%, 27%);
+}/*# sourceMappingURL=styles.css.map */
